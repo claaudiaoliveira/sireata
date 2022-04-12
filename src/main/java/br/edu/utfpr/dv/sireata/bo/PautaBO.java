@@ -57,10 +57,6 @@ public class PautaBO {
 		}
 	}
 	
-	public void excluir(Pauta pauta) throws Exception{
-		this.excluir(pauta.getIdPauta());
-	}
-	
 	public void excluir(int id) throws Exception{
 		try{
 			PautaDAO dao = new PautaDAO();

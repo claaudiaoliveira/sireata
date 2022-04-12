@@ -962,7 +962,7 @@ public class EditarAtaWindow extends EditarWindow {
                 			if(pauta.getIdPauta() > 0){
 	                			PautaBO bo = new PautaBO();
 	                			
-								bo.excluir(pauta);
+								bo.excluir(pauta.getIdPauta());
                 			}
                         	
                         	ata.getPauta().remove(index);
