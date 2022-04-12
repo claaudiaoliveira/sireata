@@ -383,6 +383,7 @@ public class AtaBO {
 			
 			for(AtaParticipante participante : ata.getParticipantes()){
 				ParticipanteReport pr = new ParticipanteReport();
+				OrgaoDAO odao = new OrgaoDAO();
 				
 				pr.setNome(participante.getParticipante().getNome() + (participante.getDesignacao().isEmpty() ? "" : " (" + participante.getDesignacao() + ")"));
 				pr.setPresente(participante.isPresente());
